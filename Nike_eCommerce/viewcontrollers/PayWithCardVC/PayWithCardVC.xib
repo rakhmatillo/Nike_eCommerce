@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayWithCardVC" customModule="Nike_eCommerce" customModuleProvider="target">
+            <connections>
+                <outlet property="orderPlacedImageView" destination="hbw-ME-xKd" id="NRy-kN-3Vk"/>
+                <outlet property="payBtn" destination="AGo-Ap-dXt" id="AVJ-UC-yZg"/>
+                <outlet property="tableView" destination="mVh-1o-UWg" id="C6r-wB-ve5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OI0-dp-FdP">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-Ap-dXt">
+                            <rect key="frame" x="0.0" y="760.5" width="414" height="57.5"/>
+                            <color key="backgroundColor" red="0.30196078430000001" green="0.47450980390000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="PAY $">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="payBtnPressed:" destination="-1" eventType="touchUpInside" id="ELH-ca-hgd"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mVh-1o-UWg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="760.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AGo-Ap-dXt" secondAttribute="bottom" constant="0.10000000000000001" id="4rD-54-349"/>
+                        <constraint firstItem="mVh-1o-UWg" firstAttribute="top" secondItem="OI0-dp-FdP" secondAttribute="top" constant="0.10000000000000001" id="5hn-ML-Y5g"/>
+                        <constraint firstItem="AGo-Ap-dXt" firstAttribute="leading" secondItem="OI0-dp-FdP" secondAttribute="leading" constant="0.10000000000000001" id="6Wj-JP-SS6"/>
+                        <constraint firstItem="AGo-Ap-dXt" firstAttribute="top" secondItem="mVh-1o-UWg" secondAttribute="bottom" constant="0.10000000000000001" id="ab4-p7-Zbe"/>
+                        <constraint firstAttribute="trailing" secondItem="AGo-Ap-dXt" secondAttribute="trailing" constant="0.10000000000000001" id="fbo-16-lpx"/>
+                        <constraint firstAttribute="trailing" secondItem="mVh-1o-UWg" secondAttribute="trailing" constant="0.10000000000000001" id="fen-R0-oSV"/>
+                        <constraint firstItem="AGo-Ap-dXt" firstAttribute="height" secondItem="OI0-dp-FdP" secondAttribute="height" multiplier="0.07" id="pRD-1H-mZE"/>
+                        <constraint firstItem="mVh-1o-UWg" firstAttribute="leading" secondItem="OI0-dp-FdP" secondAttribute="leading" constant="0.10000000000000001" id="uBY-qn-W7s"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPt-O2-DAp">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.47450980390000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orderDone" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-ME-xKd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OI0-dp-FdP" secondAttribute="bottom" constant="0.10000000000000001" id="5dg-IT-56U"/>
+                <constraint firstItem="dPt-O2-DAp" firstAttribute="top" secondItem="OI0-dp-FdP" secondAttribute="bottom" constant="0.10000000000000001" id="9fY-KK-LZu"/>
+                <constraint firstItem="dPt-O2-DAp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="0.10000000000000001" id="IGA-s9-3gv"/>
+                <constraint firstItem="hbw-ME-xKd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="0.10000000000000001" id="Iqi-gb-b7J"/>
+                <constraint firstAttribute="trailing" secondItem="dPt-O2-DAp" secondAttribute="trailing" constant="0.10000000000000001" id="NI0-lB-p8M"/>
+                <constraint firstItem="OI0-dp-FdP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="0.10000000000000001" id="Xdz-qP-7XD"/>
+                <constraint firstItem="hbw-ME-xKd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="0.10000000000000001" id="iSl-nt-hVN"/>
+                <constraint firstAttribute="bottom" secondItem="hbw-ME-xKd" secondAttribute="bottom" constant="0.10000000000000001" id="k2Y-bH-SKh"/>
+                <constraint firstItem="hbw-ME-xKd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="0.10000000000000001" id="qiz-BS-iKb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OI0-dp-FdP" secondAttribute="trailing" constant="0.10000000000000001" id="vKh-ml-Vda"/>
+                <constraint firstItem="OI0-dp-FdP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="0.10000000000000001" id="yJP-xB-EDq"/>
+                <constraint firstAttribute="bottom" secondItem="dPt-O2-DAp" secondAttribute="bottom" constant="0.10000000000000001" id="yW9-Zs-hpT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="orderDone" width="566" height="1218"/>
+    </resources>
+</document>

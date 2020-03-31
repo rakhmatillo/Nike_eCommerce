@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethodVC" customModule="Nike_eCommerce" customModuleProvider="target">
+            <connections>
+                <outlet property="continueBtn" destination="dgE-7w-iNm" id="Nzn-pG-Cox"/>
+                <outlet property="tableView" destination="3uL-D6-fNz" id="hlH-F0-phV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3uL-D6-fNz">
+                    <rect key="frame" x="0.0" y="44" width="414" height="755.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgE-7w-iNm">
+                    <rect key="frame" x="0.0" y="799.5" width="414" height="62.5"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.47450980390000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="CONTINUE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="continuePressed:" destination="-1" eventType="touchUpInside" id="tlH-A8-VfC"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-ig-FFZ">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.47450980390000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dgE-7w-iNm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="0.10000000000000001" id="9nw-qj-X3W"/>
+                <constraint firstAttribute="trailing" secondItem="0dH-ig-FFZ" secondAttribute="trailing" constant="0.10000000000000001" id="JtU-04-qvC"/>
+                <constraint firstItem="dgE-7w-iNm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="0.10000000000000001" id="KYX-xI-7j6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3uL-D6-fNz" secondAttribute="trailing" constant="0.10000000000000001" id="KdX-BX-q0t"/>
+                <constraint firstItem="3uL-D6-fNz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="0.10000000000000001" id="OUr-PF-2xm"/>
+                <constraint firstItem="dgE-7w-iNm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="0.10000000000000001" id="Rdc-mR-ei8"/>
+                <constraint firstItem="0dH-ig-FFZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="0.10000000000000001" id="YEv-oR-1F5"/>
+                <constraint firstItem="dgE-7w-iNm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="dOP-qo-gn7"/>
+                <constraint firstItem="dgE-7w-iNm" firstAttribute="top" secondItem="3uL-D6-fNz" secondAttribute="bottom" constant="0.10000000000000001" id="mhu-6f-2mB"/>
+                <constraint firstAttribute="bottom" secondItem="0dH-ig-FFZ" secondAttribute="bottom" constant="0.10000000000000001" id="nnZ-TP-LpN"/>
+                <constraint firstItem="dgE-7w-iNm" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="0.10000000000000001" id="opg-kn-3lK"/>
+                <constraint firstItem="3uL-D6-fNz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="0.10000000000000001" id="rj6-ms-kx2"/>
+                <constraint firstItem="0dH-ig-FFZ" firstAttribute="top" secondItem="dgE-7w-iNm" secondAttribute="bottom" constant="0.10000000000000001" id="ud1-9O-yte"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </view>
+    </objects>
+</document>

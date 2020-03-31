@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterVC" customModule="Nike_eCommerce" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView1" destination="eGi-c1-KHA" id="Pep-h4-Rh4"/>
+                <outlet property="tableView2" destination="cNP-1k-r9S" id="yWg-jS-ykw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-c1-KHA">
+                    <rect key="frame" x="0.0" y="44" width="136.5" height="789"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cNP-1k-r9S">
+                    <rect key="frame" x="136.5" y="44" width="277.5" height="789"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAz-78-1Ss">
+                    <rect key="frame" x="0.0" y="833" width="414" height="63"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.47450980390000003" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="APPLY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="applyBtnPressed:" destination="-1" eventType="touchUpInside" id="iCh-54-6Zq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cNP-1k-r9S" secondAttribute="trailing" id="9dZ-KT-Zg9"/>
+                <constraint firstItem="eGi-c1-KHA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.33" id="I1F-cX-4ww"/>
+                <constraint firstItem="cNP-1k-r9S" firstAttribute="leading" secondItem="eGi-c1-KHA" secondAttribute="trailing" id="PeJ-NT-UV9"/>
+                <constraint firstItem="eGi-c1-KHA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="0.10000000000000001" id="Sfl-f5-0Bv"/>
+                <constraint firstItem="jAz-78-1Ss" firstAttribute="top" secondItem="eGi-c1-KHA" secondAttribute="bottom" id="TDQ-lq-idt"/>
+                <constraint firstItem="jAz-78-1Ss" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="0.10000000000000001" id="Ua3-aE-tfA"/>
+                <constraint firstItem="cNP-1k-r9S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="0.10000000000000001" id="Xeu-yH-YQG"/>
+                <constraint firstItem="jAz-78-1Ss" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="e5o-Jd-B8u"/>
+                <constraint firstAttribute="bottom" secondItem="jAz-78-1Ss" secondAttribute="bottom" constant="0.10000000000000001" id="fSJ-5p-OhI"/>
+                <constraint firstItem="jAz-78-1Ss" firstAttribute="top" secondItem="cNP-1k-r9S" secondAttribute="bottom" id="gSQ-4Z-Mit"/>
+                <constraint firstItem="eGi-c1-KHA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lha-Sc-nh6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jAz-78-1Ss" secondAttribute="trailing" constant="0.10000000000000001" id="yQP-xF-cdc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </view>
+    </objects>
+</document>
